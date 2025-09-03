@@ -12,15 +12,30 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
+    <main className="min-h-screen flex items-center justify-center bg-background">
+      <div className="text-center space-y-6">
+        <div className="w-24 h-24 mx-auto rounded-full bg-gradient-radial from-marigold via-red-rose to-purple-royal animate-pulse-glow" />
+        
+        <h1 className="text-6xl font-bold bg-gradient-to-r from-marigold via-red-rose to-purple-royal bg-clip-text text-transparent">
+          404
+        </h1>
+        
+        <h2 className="text-2xl text-white-jasmine mb-4">
+          പൂവ് കണ്ടെത്താൻ കഴിഞ്ഞില്ല
+        </h2>
+        
+        <p className="text-xl text-white-jasmine/80 mb-8">
+          The flower you're looking for has been scattered by the wind
+        </p>
+        
+        <a 
+          href="/" 
+          className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-marigold to-red-rose text-background font-semibold rounded-full hover:shadow-festival transition-all duration-300 hover:scale-105"
+        >
+          Return to Pookalam
         </a>
       </div>
-    </div>
+    </main>
   );
 };
 

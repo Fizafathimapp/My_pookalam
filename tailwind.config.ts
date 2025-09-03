@@ -61,6 +61,31 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Pookalam Festival Colors
+				marigold: {
+					DEFAULT: 'hsl(var(--marigold))',
+					light: 'hsl(var(--marigold-light))'
+				},
+				calendula: {
+					DEFAULT: 'hsl(var(--calendula))', 
+					light: 'hsl(var(--calendula-light))'
+				},
+				purple: {
+					royal: 'hsl(var(--royal-purple))',
+					deep: 'hsl(var(--deep-purple))'
+				},
+				magenta: {
+					bright: 'hsl(var(--bright-magenta))',
+					deep: 'hsl(var(--deep-magenta))'
+				},
+				white: {
+					pure: 'hsl(var(--pure-white))',
+					jasmine: 'hsl(var(--jasmine))'
+				},
+				red: {
+					rose: 'hsl(var(--rose-red))',
+					deep: 'hsl(var(--deep-red))'
 				}
 			},
 			borderRadius: {
@@ -84,11 +109,27 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+					'50%': { transform: 'translateY(-10px) rotate(5deg)' }
+				},
+				'spin-slow': {
+					'0%': { transform: 'rotate(0deg)' },
+					'100%': { transform: 'rotate(360deg)' }
+				},
+				'pulse-glow': {
+					'0%, 100%': { opacity: '0.6', transform: 'scale(1)' },
+					'50%': { opacity: '0.9', transform: 'scale(1.05)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'spin-slow': 'spin-slow 20s linear infinite',
+				'spin-slow-reverse': 'spin-slow 20s linear infinite reverse',
+				'pulse-glow': 'pulse-glow 3s ease-in-out infinite'
 			}
 		}
 	},
